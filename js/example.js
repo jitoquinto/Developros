@@ -1,31 +1,24 @@
-/*
- * Created by hackers. Sponsored by NASA.
- * Initial "screen" loaded on startup
- */
-var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+/*var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
 function preload() {
 
-    /*game.load.image('sky', 'assets/doge_monster.jpg');
+    game.load.image('sky', 'assets/doge_monster.jpg');
     game.load.image('ground', 'assets/doge_monster.jpg');
     game.load.image('star', 'assets/doge_monster.jpg');
-    game.load.spritesheet('dude', 'assets/doge_monster.jpg', 32, 48);*/
+    game.load.spritesheet('dude', 'assets/doge_monster.jpg', 32, 48);
 
 }
 
-/*var player;
+var player;
 var platforms;
 var cursors;
 
 var stars;
 var score = 0;
 var scoreText;
-*/
+
 function create() {
-	
-	
-	
-	/*
+
     //  We're going to be using physics, so enable the Arcade Physics system
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
@@ -93,11 +86,11 @@ function create() {
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
- */   
+    
 }
 
 function update() {
-/*
+
     //  Collide the player and the stars with the platforms
     game.physics.arcade.collide(player, platforms);
     game.physics.arcade.collide(stars, platforms);
@@ -135,16 +128,16 @@ function update() {
     {
         player.body.velocity.y = -350;
     }
-*/
+
 }
 
 function collectStar (player, star) {
-  /*  
+    
     // Removes the star from the screen
     star.kill();
 
     //  Add and update the score
     score += 10;
     scoreText.text = 'Score: ' + score;
-*/
-}
+
+} */
