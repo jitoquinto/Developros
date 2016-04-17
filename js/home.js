@@ -14,15 +14,8 @@ function preload() {
 
 }
 
-/*var player;
-var platforms;
-var cursors;
-
-var stars;
-var score = 0;
-var scoreText;
-*/
-
+var title;
+var neuroButton;
 
 function create() {
 	
@@ -30,13 +23,13 @@ function create() {
 	var text = 'Play Games, Ace the MCAT, Save Lives';
     var style = {font: "60px Arial", fill:'#fc2b6a',align: "center"};
 
-    var title = game.add.text(0, 0, text, style);
+    title = game.add.text(0, 0, text, style);
     title.setTextBounds(0,0,$(window).width(),$(window).height());
 
-    var neuroButton = game.add.sprite(game.world.centerX, game.world.centerY, 'Neurotransmitter');
+    neuroButton = game.add.sprite(game.world.centerX, game.world.centerY, 'Neurotransmitter');
 
     neuroButton.inputEnabled = true;
-    neuorButton.events.onInputDown.add(actionOnClick, this);
+    neuroButton.events.onInputDown.add(actionOnClick, this);
     
 
 }
@@ -52,19 +45,12 @@ function actionOnClick(){
     //document.body.style.backgroundColor = "red";
     console.log("clicked!");
     disable();
+	var n = new Neurotransmitter();
+	console.log("end action on click");
 }
 
-function collectStar (player, star) {
-  /*  
-    // Removes the star from the screen
-    star.kill();
-
-    //  Add and update the score
-    score += 10;
-    scoreText.text = 'Score: ' + score;
-*/
-}
 
 function disable(){
-    
+    title.visible = false;
+	neuroButton.visible = false;
 }

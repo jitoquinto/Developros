@@ -1,10 +1,10 @@
 /* 
-	Passed between screens, shares infor about current state.
-	Read the commetns. Have a great day!
+	Passed between screens, shares info about current state.
+	Read the comments. Have a great day!
 
 */
 
-var SiteState = function (phgame){
+var GameState = function (phgame){
 	this.name = "UNSET";
 	this.game = phgame;
 };
