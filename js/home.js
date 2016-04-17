@@ -14,6 +14,8 @@ function preload() {
 
 }
 
+var state;
+
 var title;
 var neuroButton;
 
@@ -31,6 +33,7 @@ function create() {
     neuroButton.inputEnabled = true;
     neuroButton.events.onInputDown.add(actionOnClick, this);
     
+	
 
 }
 
@@ -45,7 +48,13 @@ function actionOnClick(){
     //document.body.style.backgroundColor = "red";
     console.log("clicked!");
     disable();
-	var n = new Neurotransmitter();
+	document.location.href = "neurotransmitter.html";	
+	
+	//game.visible = false;
+	//game.pause();
+	
+	//game.destroy();
+	//game.load.image('Neurotransmitter', '../Developros/assets/neurotransmitters.bmp');
 	console.log("end action on click");
 }
 

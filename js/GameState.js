@@ -7,6 +7,7 @@
 var GameState = function (phgame){
 	this.name = "UNSET";
 	this.game = phgame;
+	//this.whichGame = "NONE";
 };
 
 GameState.prototype.enable = function() {};
