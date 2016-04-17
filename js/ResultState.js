@@ -16,3 +16,9 @@ ResultState.prototype = Object.create(GameState.prototype);
 function preload(){
 	
 }
+
+function tick() {
+}
+
+function enable(){
+}

@@ -49,4 +49,9 @@ function toggleBody(){
 function tick(){
 	game.debug.text('Click to disable',32,32);
 	return "PLAYSTATE";
+	
+}
+
+
+function enable(){
 }
